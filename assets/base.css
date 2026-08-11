@@ -2156,6 +2156,35 @@ textarea.field__input {
   }
 }
 
+/* On a phone the four blocks stack into one column, so the desktop
+   breathing room turns into roughly a screen and a half of footer before
+   the visitor reaches the bottom. Tightening the frame — outer padding,
+   the gaps between blocks, and the space under each heading — pulls that
+   back without touching the content or shrinking any tap target. */
+@media screen and (max-width: 749px) {
+  .footer__top {
+    gap: 3.2rem;
+    padding: 4.8rem 0 4rem;
+  }
+
+  .footer__block-title {
+    margin-bottom: 1.2rem;
+  }
+
+  .footer__logo {
+    max-width: 19rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .footer__social {
+    margin-top: 1.2rem;
+  }
+
+  .footer__bottom {
+    padding: 2rem 0 2.4rem;
+  }
+}
+
 .footer__block-title {
   margin-bottom: 2rem;
   font-family: var(--font-body);
@@ -2193,7 +2222,15 @@ textarea.field__input {
 
   .footer__list a {
     display: block;
-    padding: 1.2rem 0;
+    padding: 1rem 0;
+  }
+
+  /* The footer's prose is addresses, a licence number and policy links —
+     reference material, read once. The body line-height is tuned for
+     running text and is looser than this needs, so pulling it in reclaims
+     height without making a single character smaller. */
+  .footer .rte {
+    line-height: 1.5;
   }
 }
 
@@ -2252,10 +2289,12 @@ textarea.field__input {
     height: 4.4rem;
   }
 
+  /* Padding is tuned against the tightened .rte line-height above, so that
+     tapping to call still lands a full 44px target. */
   .footer .rte a[href^='tel:'],
   .footer .rte a[href^='mailto:'] {
     display: inline-block;
-    padding: 1rem 0;
+    padding: 1.1rem 0;
   }
 }
 
