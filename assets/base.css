@@ -1350,6 +1350,26 @@ textarea.field__input {
   font-size: calc(2rem * var(--heading-scale));
 }
 
+/* Three columns on a 375px screen leave each cell about 78px of usable
+   width once the side padding is taken out — not enough for a value like
+   "Golspie", which the global overflow-wrap then split mid-word into
+   "Golspi / e". Trimming the side padding and the value size buys the room
+   a normal one-word value needs. break-word still applies as a last resort,
+   so an unusually long value wraps rather than escaping the viewport. */
+@media screen and (max-width: 749px) {
+  .spec-bar__item {
+    padding: 1.6rem 0.8rem;
+  }
+
+  .spec-bar__label {
+    font-size: 1.1rem;
+  }
+
+  .spec-bar__value {
+    font-size: calc(1.7rem * var(--heading-scale));
+  }
+}
+
 /* Accordion — tasting notes, delivery, FAQ */
 .accordion {
   border-top: 1px solid var(--border);
@@ -1715,6 +1735,13 @@ textarea.field__input {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 0.6rem;
+    /* Both of these are links/buttons a thumb has to find. */
+    min-height: 4.4rem;
+  }
+
+  .google-reviews__more {
+    min-height: 4.4rem;
+    padding: 0.8rem 0;
   }
 
   .google-reviews__arrow {
@@ -2022,6 +2049,16 @@ textarea.field__input {
   text-decoration: underline;
 }
 
+/* "Remove" sat at 30px tall — under the 44px a fingertip needs, and it lives
+   right beside the quantity stepper, so a near miss hits the wrong control.
+   The extra height is padding, so the label itself doesn't grow. */
+@media screen and (max-width: 749px) {
+  .cart-item__remove {
+    min-height: 4.4rem;
+    padding: 1rem 0;
+  }
+}
+
 /* --------------------------------------------------------------------------
    Cart page list — product, quantity and total as labelled columns
    -------------------------------------------------------------------------- */
@@ -2145,6 +2182,21 @@ textarea.field__input {
 
 .footer__list a:hover { opacity: 1; text-decoration: underline; }
 
+/* The policy links were 19px-tall targets stacked 10px apart — accurate
+   tapping territory. Turning each into a block with its own padding gives a
+   44px row while keeping the visible rhythm of the list roughly as it was,
+   since the li margin gives way to the padding. */
+@media screen and (max-width: 749px) {
+  .footer__list li {
+    margin-bottom: 0;
+  }
+
+  .footer__list a {
+    display: block;
+    padding: 1.2rem 0;
+  }
+}
+
 .footer__logo {
   max-width: 24rem;
   margin-bottom: 2rem;
@@ -2188,6 +2240,24 @@ textarea.field__input {
 .footer__social a:hover { opacity: 1; }
 
 .footer__social svg { width: 1.8rem; height: 1.8rem; }
+
+/* 40px boxes are 4px short of a comfortable touch target. Nudging them to
+   44px on phones costs nothing visually and matches the header icons.
+   The tel: and mailto: links in the footer's rich-text block are the other
+   half of this: "tap to call" is a real thing a visitor does from a phone,
+   and a 19px line of text is a poor target for it. */
+@media screen and (max-width: 749px) {
+  .footer__social a {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+
+  .footer .rte a[href^='tel:'],
+  .footer .rte a[href^='mailto:'] {
+    display: inline-block;
+    padding: 1rem 0;
+  }
+}
 
 /* --------------------------------------------------------------------------
    Age gate — first-visit confirmation over the brand pattern
