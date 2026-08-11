@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -31,51 +40,20 @@
         "padding_bottom": 80
       }
     },
-    "stills": {
-      "type": "image-banner",
-      "settings": {
-        "height": "fit",
-        "vertical_trim": 10,
-        "caption": "",
-        "fit_mobile": true,
-        "show_seal": true,
-        "seal_size": 30
-      }
-    },
-    "expression": {
-      "type": "featured-product",
-      "settings": {
-        "eyebrow": "",
-        "fallback_title": "Dunrobin Gin",
-        "description": "<p>Scottish juniper, rhubarb, heather, Scots pine resin, bramble leaf, blaeberry, crab apple and toasted oats.</p>",
-        "layout": "centered",
-        "centered_button_label": "Shop the collection",
-        "image_ratio": "portrait",
-        "show_specs": true,
-        "spec_label_1": "ABV",
-        "spec_value_1": "45%",
-        "spec_label_2": "Volume",
-        "spec_value_2": "70cl",
-        "spec_label_3": "Batch",
-        "spec_value_3": "001",
-        "color_scheme": "default",
-        "padding_top": 112,
-        "padding_bottom": 112,
-        "show_centered_button": true
-      }
-    },
     "dispatches": {
       "type": "blog-posts",
       "settings": {
+        "blog": "",
         "eyebrow": "",
         "heading": "Recent Dispatches",
         "posts_to_show": 3,
         "columns": 3,
+        "mobile_carousel": true,
         "stagger": true,
         "image_ratio": "portrait",
         "show_filters": false,
         "filters_to_show": 4,
-        "accent_color": "#8A6A3B",
+        "accent_color": "#8a6a3b",
         "show_tag": true,
         "show_date": true,
         "show_excerpt": true,
@@ -85,8 +63,40 @@
         "view_all_label": "View all dispatches",
         "color_scheme": "alt",
         "padding_top": 96,
-        "padding_bottom": 96,
-        "mobile_carousel": true
+        "padding_bottom": 96
+      }
+    },
+    "1786474828145ad531": {
+      "type": "apps",
+      "blocks": {
+        "google_reviews_repocean_repocean_reviews_badge_UgMJFk": {
+          "type": "shopify://apps/google-reviews-repocean/blocks/repocean-reviews-badge/019aa132-98b1-7055-b64e-581f915ade43",
+          "settings": {
+            "bg": "#ffffff",
+            "text": "#111827",
+            "star_color": "#F4B400",
+            "border_color": "#DEDEDE",
+            "radius": 14,
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "badge_width": 0,
+            "show_rating_number": true,
+            "show_avatars": true,
+            "max_avatars": 4,
+            "avatar_size": 22,
+            "avatar_overlap": 8,
+            "dark_mode": false
+          }
+        }
+      },
+      "block_order": [
+        "google_reviews_repocean_repocean_reviews_badge_UgMJFk"
+      ],
+      "settings": {
+        "full_width": false,
+        "color_scheme": "default",
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "intro": {
@@ -107,6 +117,17 @@
         "alignment": "center",
         "padding_top": 96,
         "padding_bottom": 96
+      }
+    },
+    "stills": {
+      "type": "image-banner",
+      "settings": {
+        "height": "fit",
+        "vertical_trim": 10,
+        "fit_mobile": true,
+        "caption": "",
+        "show_seal": true,
+        "seal_size": 30
       }
     },
     "team": {
@@ -131,19 +152,43 @@
         "text"
       ],
       "settings": {
+        "builtin_image": "team",
         "image_ratio": "square",
         "layout": "image_first",
         "wide_media": false,
         "color_scheme": "default",
         "padding_top": 96,
-        "padding_bottom": 96,
-        "builtin_image": "team"
+        "padding_bottom": 96
+      }
+    },
+    "expression": {
+      "type": "featured-product",
+      "settings": {
+        "product": "",
+        "eyebrow": "",
+        "fallback_title": "Dunrobin Gin",
+        "description": "<p>Scottish juniper, rhubarb, heather, Scots pine resin, bramble leaf, blaeberry, crab apple and toasted oats.</p>",
+        "layout": "centered",
+        "show_centered_button": true,
+        "centered_button_label": "Shop the collection",
+        "image_ratio": "portrait",
+        "show_specs": true,
+        "spec_label_1": "ABV",
+        "spec_value_1": "45%",
+        "spec_label_2": "Volume",
+        "spec_value_2": "70cl",
+        "spec_label_3": "Batch",
+        "spec_value_3": "001",
+        "color_scheme": "default",
+        "padding_top": 112,
+        "padding_bottom": 112
       }
     }
   },
   "order": [
     "hero",
     "dispatches",
+    "1786474828145ad531",
     "intro",
     "stills",
     "team",

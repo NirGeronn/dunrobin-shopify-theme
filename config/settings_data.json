@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "color_brand": "#1C348F",
@@ -38,7 +47,48 @@
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "age_gate_note": "",
-    "age_gate_frequency": "session"
+    "age_gate_frequency": "session",
+    "content_for_index": [],
+    "blocks": {
+      "6159598353363395418": {
+        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
+        "disabled": false,
+        "settings": {
+          "widget_position": "LEFT_BOTTOM",
+          "side_margin": 36,
+          "bottom_margin": 36,
+          "mobile_side_margin": 16,
+          "mobile_bottom_margin": 46
+        }
+      },
+      "10282845478094115396": {
+        "type": "shopify://apps/whatsapp-chat-support/blocks/whatsapp-embed/06aac6e2-ecae-40ee-9df2-13687b866266",
+        "disabled": false,
+        "settings": {
+          "button_text": "",
+          "background": "linear-gradient(180deg, rgba(35, 179, 58, 1), rgba(35, 179, 58, 1) 100%)",
+          "text_color": "#ffffff",
+          "icon_color": "#ffffff",
+          "chat_icon": "default",
+          "enable_notification": true,
+          "enable_animation": false,
+          "enable_click_to_chat": false,
+          "message_url": true,
+          "background_popup": "linear-gradient(180deg, rgba(35, 179, 58, 1) 20%, rgba(255, 255, 255, 1) 80%)",
+          "popup_heading_color": "#ffffff",
+          "heading_text": "Hello there👋",
+          "subheading_text": "How may we help you?",
+          "reply_time_color": "#ffe600",
+          "response_message": "We typically respond within a",
+          "response_time": "few minutes",
+          "social_text": "Find us on",
+          "bottom_margin": 24,
+          "right_margin": 24,
+          "bottom_mobile_margin": 16,
+          "right_mobile_margin": 16
+        }
+      }
+    }
   },
   "presets": {
     "Dunrobin": {
